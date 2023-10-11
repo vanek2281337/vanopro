@@ -26,15 +26,20 @@
                         FontSize="18"
                         HorizontalOptions="Center" />
                     <Entry 
+                        x:Name="PhoneEntry"
                         Keyboard="Telephone"
                         Placeholder ="Введите номер телефона"
                         Margin ="0, 15, 0, 0"
                         TextColor="#222"
                         />
                     <Entry
+                        x:Name="CodeEntry"
+                        IsVisible="false"
+                        TextColor="#222"
                         Placeholder="Введите код"
                         Margin="0, 15, 0, 0"/>
                     <Button
+                        Clicked="send_Clicked"
                         Margin=" 0, 15, 0, 0"
                         Text="Отправить"
                         TextColor="White"
